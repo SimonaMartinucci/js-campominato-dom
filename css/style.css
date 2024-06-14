@@ -52,6 +52,14 @@ h1 {
     cursor: pointer;
 }
 
-.clicked {
+.box.clicked {
     background-color: #7fffd4;
+}
+
+.box.clicked.boom {
+    background-color: red;
+}
+
+.box.clicked.safe {
+    background-color: blue;
 }
