@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #011627;
+    height: 100vh;
+    text-align: center;
+}
+
+/* HEADER */
+h1 {
+    font-size: 40px;
+    color: white;
+    margin: 30px 0 20px;
+}
+
+.choice {
+    margin-bottom: 30px;
+}
+
+select {
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #011627;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+
+/* MAIN */
+.container {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.easy {
+    width: 600px;
+    height: 600px;
+}
+
+.middle {
+    width: 540px;
+    height: 540px;
+}
+
+.hard {
+    width: 420px;
+    height: 420px;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    color: white;
+    align-content: center;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: #7fffd4;
+}
