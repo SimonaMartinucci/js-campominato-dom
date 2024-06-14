@@ -24,8 +24,8 @@ function palindroma(parola) {
 }
 
 // GENERATORE NUMERO RANDOM
-function randomNumber() {
-    return Math.floor(Math.random() * 5) + 1;
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * max) + min;
 }
 
 // SOMMARE 2 NUMERI
@@ -61,4 +61,22 @@ function createClassElement(tagToAdd, classToAdd) {
     box.classList.add(classToAdd);
 
     return box;
+}
+
+// GENERARE ARRAY CON NUMERI RANDOM MAI UGUALI
+function arrayRandDiversi() {
+
+    const arrayNumRand = [];
+
+    // generare 16 numeri random
+    while(arrayNumRand.length < 16) {
+        
+        let nRand = randomNumber(1, 100)
+
+        if(!arrayNumRand.includes(nRand)) {
+            arrayNumRand.push(nRand)
+        }
+    }
+    
+    return arrayNumRand;
 }

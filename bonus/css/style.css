@@ -73,6 +73,22 @@ select {
     cursor: pointer;
 }
 
-.clicked {
-    background-color: #7fffd4;
+.box.clicked {
+    background-color: blue;
+}
+
+.box.boom {
+    background-color: red;
+}
+
+.score {
+    display: none;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.score.active {
+    display: block;
 }
