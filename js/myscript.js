@@ -11,10 +11,11 @@ const button = document.querySelector(".btn");
 button.addEventListener("click",
     function() {
 
-         // richiamo funzione che mi genera 16 num random
-         let bombs = arrayRandDiversi();
+        // richiamo funzione che mi genera 16 num random
+        let bombs = arrayRandDiversi();
 
-         console.log(bombs);
+        // richiamo div del punteggio
+        let score = document.querySelector(".score");
 
         //  svuoto il container ogni volta che clicco il bottone
          container.innerHTML = "";
@@ -35,22 +36,21 @@ button.addEventListener("click",
                     // emetto un messaggio in console con il numero della cella cliccata
                     console.log(content);
 
-                    for(i = 1; i <= 84; i++) {
+                    for(i = 1; i <= 100; i++) {
 
-                        if(!bombs.includes(content)) {
-                            box.classList.add("safe");
-                        }else {
+                        if(bombs.includes(content)) {
                             box.classList.add("boom");
                         }
-
-                    }
-                    
+                    } 
                 }
             )         
             // metto i numeri all'interno dei box
             box.append(content);
             // li metto nel container
             container.append(box);
+            
+            // rendo visibile div punteggio
+            score.classList.add("active");
         }   
     }  
 )
